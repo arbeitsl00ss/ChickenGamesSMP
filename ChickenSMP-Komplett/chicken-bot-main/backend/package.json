@@ -1,0 +1,19 @@
+{
+  "name": "barbar_354-backend",
+  "version": "2.0.0",
+  "description": "barbar_354 - Discord bot with web dashboard control and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0"
+  }
+}
