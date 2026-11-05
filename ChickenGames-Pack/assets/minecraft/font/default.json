@@ -1,0 +1,44 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/gui/menu_1row.png",
+      "ascent": 13,
+      "height": 132,
+      "chars": [
+        "\ue101"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/gui/menu_3row.png",
+      "ascent": 13,
+      "height": 168,
+      "chars": [
+        "\ue103"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/gui/menu_6row.png",
+      "ascent": 13,
+      "height": 222,
+      "chars": [
+        "\ue106"
+      ]
+    },
+    {
+      "type": "space",
+      "advances": {
+        "\uf801": -1,
+        "\uf802": -2,
+        "\uf804": -4,
+        "\uf808": -8,
+        "\uf810": -16,
+        "\uf820": -32,
+        "\uf840": -64,
+        "\uf880": -128
+      }
+    }
+  ]
+}

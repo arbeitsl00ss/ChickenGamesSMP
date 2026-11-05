@@ -1,0 +1,61 @@
+name: ChickenSMPCore
+version: 1.2.0
+main: com.chickensmp.core.ChickenSMP
+api-version: '1.21'
+author: Fynn
+description: Core plugin for Chicken Games with Economy, Staff tools, Homes, TPA and Shop.
+
+commands:
+  shop:
+    description: Open the Chicken Games shop
+  rtp:
+    description: Random teleport into the wild
+  spawn:
+    description: Teleport to spawn
+  balance:
+    description: Check your current balance
+    aliases: [bal]
+  baltop:
+    description: Zeigt die reichsten Spieler auf dem Server
+    aliases: [topbal]
+  tpa:
+    description: Send a TPA request
+  tpaccept:
+    description: Accept a TPA request
+  tpdeny:
+    description: Deny a TPA request
+  sethome:
+    description: Set a named home
+  home:
+    description: Teleport to a home or open homes GUI
+  delhome:
+    description: Delete a home
+  homes:
+    description: Open homes GUI
+  ah:
+    description: Open the auction house
+  order:
+    description: Öffnet das Order-Menü
+    aliases: [orders]
+  meta:
+    description: Set custom price for item in hand
+    aliases: [setmeta]
+  sell:
+    description: Sell item in main hand
+  pay:
+    description: Send money to a player
+  adminpay:
+    description: Generate money (Developer only)
+  setrank:
+    description: Set player rank
+  vanish:
+    description: Toggle vanish mode (Mod/Dev/Owner)
+  punish:
+    description: Ban a player with reason
+  timeout:
+    description: Timeout a player with reason
+
+permissions:
+  chickensmp.admin:
+    description: Allows /setrank
+    default: op

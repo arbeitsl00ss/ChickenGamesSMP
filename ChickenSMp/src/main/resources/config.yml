@@ -1,0 +1,22 @@
+# Konsole live in Discord anzeigen (Bot laeuft z.B. auf Render)
+discord-console:
+  enabled: false
+  # Adresse deines Bots + /api/minecraft/console
+  url: "https://DEIN-BOT.onrender.com/api/minecraft/console"
+  # Langes zufaelliges Passwort. MUSS identisch mit MC_CONSOLE_SECRET in Render sein.
+  # Diese Datei NIE oeffentlich hochladen (GitHub)!
+  secret: "HIER-LANGES-ZUFAELLIGES-PASSWORT"
+  # Ab welchem Level gesendet wird: DEBUG, INFO, WARN, ERROR
+  min-level: "INFO"
+  send-interval-seconds: 3
+  # IP-Adressen in der Konsole durch x.x.x.x ersetzen
+  redact-ips: true
+
+# Menue-Pack (dunkle Menue-Hintergruende). Die ZIP muss unter der URL erreichbar sein.
+# In der server.properties darf dafuer KEIN resource-pack eingetragen sein.
+resource-pack:
+  enabled: true
+  url: "https://raw.githubusercontent.com/arbeitsl00ss/ChickenGamesSMP/main/ChickenGames-Pack.zip"
+  sha1: "02069beb51ec8a73d8c3d7c72b8406cd5e005780"
+  # true = Spieler muessen das Pack annehmen
+  required: false
