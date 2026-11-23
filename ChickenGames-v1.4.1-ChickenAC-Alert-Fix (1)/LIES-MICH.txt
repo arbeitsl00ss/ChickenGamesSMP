@@ -1,0 +1,17 @@
+CHICKEN GAMES - PROJEKT-PAKET
+
+Plugin-und-Pack/   Minecraft-Paper-Plugin (Quellcode) + ChickenGames-Pack.zip (Resource Pack)
+Bot/               Discord-Bot (Backend + Dashboard)
+
+1) PLUGIN: Ordner Plugin-und-Pack/ChickenSMp in IntelliJ oeffnen -> Maven -> clean, dann package.
+   Ergebnis: ChickenSMp/target/ChickenSMPCore-1.4.0.jar
+   Die JAR in den plugins-Ordner legen und den Server neu starten.
+2) KONFIGURATION: plugins/ChickenSMPCore/config.yml bearbeiten.
+   Alle Shop-Kategorien, Produkte, Preise, Mengen, Slots, Icons, Texte und Sounds sind konfigurierbar. ChickenAC-Einstellungen liegen unter anticheat; pro Spieler sind maximal drei Homes erlaubt.
+   Nach Aenderungen im laufenden Server: /chicken reload (OP oder chickenperms.admin).
+   Siehe Plugin-und-Pack/ChickenSMp/KONFIGURATION.md fuer Beispiele und Plugin-und-Pack/ChickenSMp/CHICKENAC.md fuer ChickenAC-Befehle.
+3) PACK: Plugin-und-Pack/ChickenGames-Pack.zip in das GitHub-Repo hochladen.
+4) BOT: Inhalt von Bot/ in das Bot-Repo laden (z. B. Render, Root Directory: backend).
+5) DISCORD: In der config.yml discord-console URL und ein eigenes Secret eintragen.
+
+Hinweis: Dieses Paket enthaelt Java-Quellcode, keine fertig gebaute JAR. Maven/Paper-Build und ein Test auf einem echten Server muessen noch ausgefuehrt werden.

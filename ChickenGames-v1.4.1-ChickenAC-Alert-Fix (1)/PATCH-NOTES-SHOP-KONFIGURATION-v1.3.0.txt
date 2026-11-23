@@ -1,0 +1,22 @@
+ChickenGames v1.3.0 – Shop-Fix und Konfiguration
+
+Behobenes Shop-Problem:
+- Hauptshop und Kategorie-Shops werden jetzt über einen eigenen InventoryHolder identifiziert, nicht über den sichtbaren Titel.
+- Änderungen durch Farbcodes oder Resource-Pack-Zeichen verhindern dadurch nicht mehr, dass Produktklicks verarbeitet werden.
+- Die Klickverarbeitung nutzt weiterhin den tatsächlichen Slot der Shop-Oberfläche.
+- Der Enderperlen-Gegenstand im normalen Equipment-Shop löst keinen RTP aus; RTP ist nur im eigenen RTP-Menü aktiv.
+- Ungültige Produktmaterialien und Slots werden in der Serverkonsole protokolliert.
+
+Konfiguration:
+- Kategorien an-/ausschalten, Menü-Slots, Icons, Namen, Lore, Titel und Größe.
+- Produkte an-/ausschalten, Material, Slot, Menge, Preis, Anzeige-Name und Lore.
+- Optionale Permissions pro Kategorie und Produkt.
+- Optionaler eigener Item-Name und Item-Lore für gekaufte Gegenstände.
+- Preiszeile, Klickhinweis, Währungssymbol, Back-Button, Sounds und Inventar-voll-Verhalten.
+- Vorhandene config.yml wird ergänzt, ohne bereits eingestellte Werte zu überschreiben.
+- /chicken reload lädt Einstellungen neu.
+
+Prüfungen:
+- config.yml wurde mit einem YAML-Parser validiert.
+- ZIP-Integrität wird vor Auslieferung geprüft.
+- Kein vollständiger Maven/Paper-Build oder Live-Server-Test möglich in dieser Umgebung.

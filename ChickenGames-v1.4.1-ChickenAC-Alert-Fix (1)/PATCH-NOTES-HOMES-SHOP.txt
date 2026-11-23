@@ -1,0 +1,14 @@
+ChickenGames – Korrekturen für Shop und Homes
+
+1. Enderperle im Ausrüstungsshop
+   - Der Klick kauft nun eine Enderperle für $20.
+   - Er startet keinen Random-Teleport mehr.
+   - Random-Teleport funktioniert nur noch im eigenen Random-Teleport-Menü.
+
+2. Homes
+   - Gespeicherte Homes werden im /homes-Menü als Betten angezeigt.
+   - Linksklick teleportiert, Rechtsklick löscht.
+   - Nach /sethome wird /home <Name> als Nutzungsbefehl angezeigt.
+   - /home <TAB> und /delhome <TAB> schlagen vorhandene Homes vor.
+
+Hinweis: Es wurde der Java-Quellcode im Projekt geändert. Eine Paper-JAR konnte in dieser Umgebung nicht kompiliert und getestet werden.

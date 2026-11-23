@@ -1,0 +1,379 @@
+# ChickenGames - zentrale Einstellungen
+# Nach Änderungen: /chicken reload (ChickenPerms-Admin oder OP)
+
+# Discord-Konsolenverbindung
+# Das Secret niemals öffentlich teilen.
+discord-console:
+  enabled: false
+  url: "https://DEIN-BOT.onrender.com/api/minecraft/console"
+  secret: "HIER-LANGES-ZUFAELLIGES-PASSWORT"
+  min-level: "INFO"
+  send-interval-seconds: 3
+  redact-ips: true
+
+# Resource Pack
+resource-pack:
+  enabled: true
+  url: "https://raw.githubusercontent.com/arbeitsl00ss/ChickenGamesSMP/main/ChickenGames-Pack.zip"
+  sha1: "9cc1d0a6d7fc0a40b8eb4ecb9f0d2f35a1190a3b"
+  required: true
+
+# Scoreboard
+scoreboard:
+  pack-icons: true
+  frame: true
+
+# Wirtschaft
+economy:
+  starting-balance: 1000.0
+  currency-symbol: "$"
+
+# Homes
+homes:
+  # ChickenGames begrenzt jeden Spieler fest auf maximal drei Homes.
+  max-per-player: 3
+
+# Teleports
+teleport:
+  countdown-seconds: 3
+  tpa-request-seconds: 15
+  rtp:
+    min-radius: 100
+    max-radius: 1000
+    # Leer = Welt des Spielers; sonst exakter Weltname
+    world: ""
+
+# PvP-Kampfzeit
+combat:
+  tag-seconds: 30
+
+# Shop: Kategorien, Positionen, Items, Mengen und Preise sind frei konfigurierbar.
+shop:
+  enabled: true
+  title: "&fShop"
+  size: 27
+  category-size: 27
+  # Wenn Inventar voll ist: true = Rest neben dem Spieler ablegen,
+  # false = Kauf abbrechen und Geld automatisch zurückerstatten.
+  drop-overflow: true
+  # Anzeigezeilen aller Produkte. Platzhalter: {currency}, {price}, {amount}
+  display:
+    price-line: "&ePreis: {currency}{price}"
+    click-line: "&7Klicke zum Kaufen"
+  # Sound-Namen aus der Bukkit/Paper-Soundliste; NONE oder leer = aus.
+  sounds:
+    open: "BLOCK_CHEST_OPEN"
+    purchase: "ENTITY_PLAYER_LEVELUP"
+    error: "ENTITY_VILLAGER_NO"
+  back-button:
+    enabled: true
+    slot: 26
+    material: BARRIER
+    name: "&cZurück zum Shop"
+    lore:
+      - "&7Klicke zum Hauptshop"
+  categories:
+    nether:
+      enabled: true
+      menu-slot: 12
+      icon: NETHERRACK
+      name: "&bNether"
+      title: "&bNether"
+      size: 27
+      items:
+        blaze-rod:
+          enabled: true
+          slot: 10
+          material: BLAZE_ROD
+          name: "&6Blaze Rod"
+          amount: 1
+          price: 30
+          # Optional: Permission, die zum Kaufen erforderlich ist.
+          # permission: "chickenshop.buy.blaze_rod"
+          # Optional: Name/Lore des gekauften Gegenstands im Inventar.
+          # item-display-name: "&6Premium-Blaze-Rod"
+          # item-lore:
+          #   - "&7Vom ChickenGames-Shop gekauft"
+        nether-wart:
+          enabled: true
+          slot: 11
+          material: NETHER_WART
+          name: "&cNether Warze"
+          amount: 1
+          price: 10
+        glowstone-dust:
+          enabled: true
+          slot: 12
+          material: GLOWSTONE_DUST
+          name: "&eGlowstone Staub"
+          amount: 1
+          price: 15
+        magma-cream:
+          enabled: true
+          slot: 13
+          material: MAGMA_CREAM
+          name: "&6Magma Creme"
+          amount: 1
+          price: 25
+        ghast-tear:
+          enabled: true
+          slot: 14
+          material: GHAST_TEAR
+          name: "&fGhast Träne"
+          amount: 1
+          price: 75
+        quartz:
+          enabled: true
+          slot: 15
+          material: QUARTZ
+          name: "&fQuarz"
+          amount: 1
+          price: 12
+        soul-sand:
+          enabled: true
+          slot: 16
+          material: SOUL_SAND
+          name: "&8Seelensand"
+          amount: 1
+          price: 20
+        magma-block:
+          enabled: true
+          slot: 17
+          material: MAGMA_BLOCK
+          name: "&cMagmablock"
+          amount: 1
+          price: 18
+        crying-obsidian:
+          enabled: true
+          slot: 18
+          material: CRYING_OBSIDIAN
+          name: "&5Crying Obsidian"
+          amount: 1
+          price: 40
+
+    equipment:
+      enabled: true
+      menu-slot: 13
+      icon: TOTEM_OF_UNDYING
+      name: "&bAusrüstung"
+      title: "&bAusrüstung"
+      size: 27
+      items:
+        obsidian:
+          enabled: true
+          slot: 10
+          material: OBSIDIAN
+          name: "&5Obsidian"
+          amount: 1
+          price: 40
+        glowstone:
+          enabled: true
+          slot: 11
+          material: GLOWSTONE
+          name: "&eGlowstone"
+          amount: 1
+          price: 30
+        totem:
+          enabled: true
+          slot: 12
+          material: TOTEM_OF_UNDYING
+          name: "&6Totem"
+          amount: 1
+          price: 1500
+        ender-pearl:
+          enabled: true
+          slot: 13
+          material: ENDER_PEARL
+          name: "&2Enderperle"
+          amount: 1
+          price: 20
+        golden-apple:
+          enabled: true
+          slot: 14
+          material: GOLDEN_APPLE
+          name: "&6Goldapfel"
+          amount: 1
+          price: 150
+        experience-bottle:
+          enabled: true
+          slot: 15
+          material: EXPERIENCE_BOTTLE
+          name: "&aXP-Flasche"
+          amount: 1
+          price: 50
+        ender-chest:
+          enabled: true
+          slot: 16
+          material: ENDER_CHEST
+          name: "&5Endertruhe"
+          amount: 1
+          price: 300
+        shield:
+          enabled: true
+          slot: 17
+          material: SHIELD
+          name: "&7Schild"
+          amount: 1
+          price: 100
+        arrow:
+          enabled: true
+          slot: 18
+          material: ARROW
+          name: "&fPfeile"
+          amount: 8
+          price: 5
+
+    food:
+      enabled: true
+      menu-slot: 14
+      icon: COOKED_PORKCHOP
+      name: "&bEssen"
+      title: "&bEssen"
+      size: 27
+      items:
+        potato:
+          enabled: true
+          slot: 10
+          material: POTATO
+          name: "&6Kartoffel"
+          amount: 1
+          price: 3
+        sweet-berries:
+          enabled: true
+          slot: 11
+          material: SWEET_BERRIES
+          name: "&cBeeren"
+          amount: 1
+          price: 2
+        melon-slice:
+          enabled: true
+          slot: 12
+          material: MELON_SLICE
+          name: "&aMelone"
+          amount: 1
+          price: 3
+        carrot:
+          enabled: true
+          slot: 13
+          material: CARROT
+          name: "&6Karotte"
+          amount: 1
+          price: 3
+        bread:
+          enabled: true
+          slot: 14
+          material: BREAD
+          name: "&eBrot"
+          amount: 1
+          price: 6
+        apple:
+          enabled: true
+          slot: 15
+          material: APPLE
+          name: "&cApfel"
+          amount: 1
+          price: 8
+        cooked-chicken:
+          enabled: true
+          slot: 16
+          material: COOKED_CHICKEN
+          name: "&6Hähnchen"
+          amount: 1
+          price: 6
+        cooked-beef:
+          enabled: true
+          slot: 17
+          material: COOKED_BEEF
+          name: "&6Steak"
+          amount: 1
+          price: 6
+
+    specials:
+      enabled: true
+      menu-slot: 15
+      icon: NETHER_STAR
+      name: "&bKöpfe & Specials"
+      title: "&bKöpfe & Specials"
+      size: 27
+      items:
+        name-tag:
+          enabled: true
+          slot: 10
+          material: NAME_TAG
+          name: "&eNamensschild"
+          amount: 1
+          price: 100
+        saddle:
+          enabled: true
+          slot: 11
+          material: SADDLE
+          name: "&6Sattel"
+          amount: 1
+          price: 150
+        shulker-box:
+          enabled: true
+          slot: 12
+          material: SHULKER_BOX
+          name: "&5Shulkerkiste"
+          amount: 1
+          price: 500
+        anvil:
+          enabled: true
+          slot: 13
+          material: ANVIL
+          name: "&7Amboss"
+          amount: 1
+          price: 250
+        beacon:
+          enabled: true
+          slot: 14
+          material: BEACON
+          name: "&bBeacon"
+          amount: 1
+          price: 5000
+        elytra:
+          enabled: true
+          slot: 15
+          material: ELYTRA
+          name: "&dElytra"
+          amount: 1
+          price: 10000
+
+# Chatmeldungen; Platzhalter bei Shopkäufen: {amount}, {item}, {price}
+messages:
+  shop-disabled: "&cDer Shop ist momentan deaktiviert."
+  shop-category-disabled: "&cDiese Shop-Kategorie ist deaktiviert."
+  shop-category-no-permission: "&cDu darfst diese Kategorie nicht öffnen."
+  shop-no-permission: "&cDu darfst dieses Item nicht kaufen."
+  shop-not-enough-money: "&cDu hast nicht genug Geld! Preis: {price}"
+  shop-purchased: "&aDu hast {amount}x {item} für {price} gekauft."
+  shop-overflow-dropped: "&eDein Inventar war voll. Übrige Items wurden neben dir abgelegt."
+  shop-inventory-full: "&cDein Inventar ist voll. Kauf abgebrochen."
+
+
+# ChickenAC - konservatives AntiCheat (meldet Auffälligkeiten, bannt nicht automatisch)
+anticheat:
+  alerts:
+    in-game: true
+    console: true
+    cooldown-seconds: 4
+  checks:
+    fly:
+      enabled: true
+      # Aufeinanderfolgende Messungen mit Aufwärtsbewegung (Abfrage alle 2 Ticks).
+      max-rising-samples: 9
+      # Längere Bewegung ohne Höhenänderung in der Luft.
+      max-hover-samples: 24
+    speed:
+      enabled: true
+      # Erlaubte horizontale Distanz pro Bewegungs-Event.
+      max-horizontal-distance-per-move: 0.65
+    reach:
+      enabled: true
+      max-distance: 3.55
+    autoclicker:
+      enabled: true
+      max-swings-per-second: 24
+    fastplace:
+      enabled: true
+      max-blocks-per-second: 26

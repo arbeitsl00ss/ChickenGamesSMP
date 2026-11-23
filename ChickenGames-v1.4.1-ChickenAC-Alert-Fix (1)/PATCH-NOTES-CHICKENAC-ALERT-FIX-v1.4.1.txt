@@ -1,0 +1,15 @@
+ChickenGames v1.4.1 – ChickenAC Alert-Fix
+
+Änderungen:
+- /chickenac alerts ohne Zusatz schaltet Alerts ausdrücklich EIN (statt sie beim ersten Aufruf auszuschalten).
+- /chickenac alerts on|off|toggle|status für eine eindeutige Verwaltung.
+- /chickenac test sendet eine eindeutig markierte Testmeldung über denselben Ingame-Alert-Empfängerkreis und in die Konsole (abhängig von config.yml).
+- /chickenac status zeigt aktivierte Checks und die Zahl der online berechtigten Alert-Empfänger.
+- Hilfe, Tabcompletion und CHICKENAC.md aktualisiert.
+
+Wichtige Hinweise:
+- Alert-Empfänger benötigen chickenac.alerts oder chickenac.admin (standardmäßig OP).
+- OP-Spieler und Spieler mit chickenac.bypass werden selbst nicht geprüft.
+- Eine Testmeldung überprüft nur die Weiterleitung, nicht die Erkennung eines bestimmten Cheats.
+- Die vorhandenen Checks sind Fly, Speed, Reach, AutoClicker und FastPlace. X-Ray und KillAura sind in dieser Version nicht enthalten.
+- Das Archiv enthält den Projektquellcode. Eine JAR wurde nicht gebaut oder in Minecraft getestet.
